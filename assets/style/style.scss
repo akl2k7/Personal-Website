@@ -1,0 +1,113 @@
+// SCSS for my website
+// By Andrew Laino
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+@import url(https://fonts.googleapis.com/css?family=Cuprum);
+
+//Variables
+$bgColor : #0c2635;
+$bodyBg : #02354d;
+$headerBg : #0E543F;
+$headFont : Orbitron;
+
+a{
+	color: yellow;
+}
+
+body{
+	font-family: Cuprum;
+	background-color: $bgColor;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	background-color: $headerBg;
+	color: white;
+	font-size: 30px;
+	border-radius: 5px;
+	padding-left: 10px;
+	font-family: $headFont;
+}
+
+footer{
+	background-color: $headerBg;
+	color: white;
+	font-size: 15px;
+	border-radius: 5px;
+	padding-left: 10px;
+	font-family: $headFont;
+}
+
+.glyphicon{
+  font-size: 40px;
+}
+
+.dropdown {
+  button{
+    background-color: green;
+    &:hover{
+      background-color: $bgColor;
+    }
+  }
+  li a{
+    color: yellow;
+    font-size: 30px;
+  }
+}
+
+// Custom navbar class
+.navbar-homepage{
+  background-color: $bgColor;
+  .nav-pills{
+  	background-color: $bgColor;
+  	
+  	.active li{
+  	  background-color: $bgColor;
+    }
+    li{
+    	background-color: $bgColor;
+    	margin: 0px;
+    	a{
+  	    color: white;
+        &:hover{
+        	color: black;
+        	margin: 0px;
+        }
+    	}
+      &.active{
+        background-color: #b7c2c8;
+      }
+    }
+  }
+}
+
+// Custom panel class
+.panel-homepage{
+	.panel-heading{
+		background-color: $headerBg;
+		color: white;
+	}
+	.panel-body{
+  	color: #fdfffa;
+  	background-color: $bodyBg;	
+  }
+	h2{
+		background-color: $bgColor;
+	}
+	ul li{
+		background-color: $bodyBg;
+	}
+	.panel-footer{
+	  padding: 0px;
+  }
+}
+
+// Media queries
+@media screen and (min-width: 320px) and (max-width: 700px){
+  body {
+    font-size: 20px;
+  }
+}
